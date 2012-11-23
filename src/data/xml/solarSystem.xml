@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- TODO Définition d'un schéma -->
+
+<solarSystem size="39.44" ecliptic="180" 
+			 radiusCorrection="0.01" distanceCorrection="0.000025"
+			 starRadiusAdditionalCorrection="0.2"
+			 speedCorrection="0.0007" 
+			 detailLevel="1">
+	
+	<scales distanceMetrics="AU" radiusMetrics="km" 
+			revolutionTimeMetrics="year" rotationTimeMetrics="hour">
+		<referenceObject name="Earth" 
+						 radius="6380" day="23.93" />
+	</scales>
+	
+	<objects>
+	
+		<stars>
+			<star name="Sun" texture3D="sunmap.jpg" 
+				  relativeRadius="109" spectralType="G2V"
+				  excentricity="" orbitAngle="" revolutionPeriod="0" rotationPeriod="671.63" />
+		</stars>
+		
+		<planets>
+		
+			<planet name="Mercury" texture3D="mercurymap.jpg" symbol="mercury.png" 
+					relativeRadius="0.387" sunDistance="0.4" type="T"
+					excentricity="0.206" orbitAngle="7" revolutionPeriod="2105.84" rotationPeriod="1411.87" />
+					
+			<planet name="Venus" texture3D="venusmap.jpg" symbol="" 
+					relativeRadius="0.95" sunDistance="0.723" type="T"
+					excentricity="0.0067" orbitAngle="3.4" revolutionPeriod="5377" rotationPeriod="5815" />
+			
+			<planet name="Earth" texture3D="earthmap1k.jpg" symbol="" 
+					relativeRadius="1" sunDistance="1" type="T"
+					excentricity="0.017" orbitAngle="0" revolutionPeriod="8740.67" rotationPeriod="23.93">
+				<satellites>
+					<satellite name="Moon" texture3D="moon-125x63.jpg" relativeRadius="" />
+				</satellites>
+			</planet>
+			
+			<planet name="Mars" texture3D="marsmap1k.jpg" 
+					symbol="" relativeRadius="0.53" sunDistance="1.524" type="T"
+					excentricity="0.0093" orbitAngle="1.85" revolutionPeriod="16439.91" rotationPeriod="24.62">
+				<satellites>
+					<satellite name="Phobos" texture3D="map.jpg" relativeRadius="" />
+					<satellite name="Deimos" texture3D="map.jpg" relativeRadius="" />
+				</satellites>
+			</planet>
+			
+			<planet name="Jupiter" texture3D="jupitermap.jpg" symbol=""
+					relativeRadius="11.2" sunDistance="5.203" type="J"
+					excentricity="0.049" orbitAngle="1.3" revolutionPeriod="103664.34" rotationPeriod="9.92">
+				<satellites totalNumber="63">
+					<satellite name="Ganymede" texture3D="map.jpg" relativeRadius="" />
+					<satellite name="Callisto" texture3D="map.jpg" relativeRadius="" />
+					<satellite name="Io" texture3D="map.jpg" relativeRadius="" />
+					<satellite name="Europa" texture3D="map.jpg" relativeRadius="" />
+				</satellites>
+			</planet>
+			
+			<planet name="Saturn" texture3D="saturnmap.jpg" symbol="" 
+					relativeRadius="9.3" sunDistance="9.54" type="J"
+					excentricity="0.055" orbitAngle="2.5" revolutionPeriod="257500.13" rotationPeriod="10.57">
+				<satellites totalNumber="62">
+					<satellite name="Titan" texture3D="map.jpg" relativeRadius="" />
+					<satellite name="Enceladus" texture3D="map.jpg" relativeRadius="" />
+				</satellites>
+			</planet>
+			
+			<planet name="Uranus" texture3D="uranusmap.jpg" symbol="" 
+					relativeRadius="4" sunDistance="19.19" type="J"
+					excentricity="0.044" orbitAngle="0.8" revolutionPeriod="737013.29" rotationPeriod="17.24">
+				<satellites totalNumber="27">
+					<satellite name="Titania" texture3D="map.jpg" relativeRadius="" />
+					<satellite name="Oberon" texture3D="map.jpg" relativeRadius="" />
+					<satellite name="Umbriel" texture3D="map.jpg" relativeRadius="" />
+					<satellite name="Ariel" texture3D="map.jpg" relativeRadius="" />
+					<satellite name="Miranda" texture3D="map.jpg" relativeRadius="" />
+				</satellites>
+			</planet>
+			
+			<planet name="Neptune" texture3D="neptunemap.jpg" symbol=""
+					relativeRadius="3.9" sunDistance="30.06" type="J"
+					excentricity="0.0085" orbitAngle="1.8" revolutionPeriod="1440462.42" rotationPeriod="16.1">
+				<satellites totalNumber="13">
+					<satellite name="Triton" texture3D="map.jpg" relativeRadius="" />
+				</satellites>
+			</planet>	
+		
+		</planets>
+		
+	</objects>
+
+</solarSystem>

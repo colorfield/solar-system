@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<mainMenu>
+	
+	<!-- Chaque noeud est cliquable, il mène vers le premier élément feuille
+		 A chaque feuille correspond un objet Screen géré par ScreenManager
+	 -->
+
+	<menuItem label="Actualité" description="Toute l'actualité du système solaire" clickable >
+		<menuItem label="Premier contact" description="Les infos à ne pas manquer" screenClass="Screen01News" clickable />
+		<menuItem label="Plan de vol" description="" screenClass="Screen01Map" clickable />
+		<menuItem label="Journal de bord" description="" screenClass="Screen01Gallery"  clickable />
+		<menuItem label="Infosphère" description="" screenClass="Screen01Delicious"  clickable />
+	</menuItem>
+	
+	<menuItem label="Voyager" subLabel="Sonder le système solaire" description="" clickable >
+		<menuItem label="Notre système" description="Fiches techniques" screenClass="Screen02PlanetsDetails"  clickable />
+		<menuItem label="Perspective" description="Une première approche" screenClass="Screen02PlanetsPerspective"  clickable />
+	</menuItem>
+	
+	
+	<!-- Attention, particularité ! chacune des 3 classes instanciées nécessite le même Model et le 
+	même Controller -->
+	<menuItem label="Le laboratoire" subLabel="Fusion et création" description="" clickable >
+		<menuItem label="" description="" screenClass="Screen03Rotation"  clickable />
+		<menuItem label="" description="" screenClass="Screen03System"  clickable />
+		<menuItem label="" description="" screenClass="Screen03HR"  clickable />
+	</menuItem>
+	
+	
+	<menuItem label="L'Observatoire" subLabel="Cartographie du Ciel" description="" clickable >
+		<menuItem label="Hubble - Le Champ Profond" description="Regarder il y 13 milliards d'années" screenClass="Screen04Hubble"  clickable />
+		<menuItem label="Mars" description="" screenClass="Screen04Mars"  clickable />
+		<menuItem label="La Lune" description="" screenClass="Screen04Moon"  clickable />
+		<menuItem label="La Terre" description="" screenClass="Screen04Earth"  clickable />
+	</menuItem>
+	
+	<menuItem label="La Passerelle" subLabel="Le début du voyage" description="" clickable >
+		<menuItem label="Starfleet" description="Testez vos connaissances" screenClass="Screen05Quiz"  clickable />
+		<menuItem label="En avant toutes !" description="Pilotez l'Enterprise" screenClass="Screen05Voyage"  clickable />
+	</menuItem>
+	
+</mainMenu>
